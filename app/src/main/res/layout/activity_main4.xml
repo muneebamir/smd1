@@ -66,6 +66,16 @@
                     android:background="@drawable/oval_image"
                     android:layout_marginLeft="20dp"/>
 
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/plus"
+                   android:layout_toEndOf="@+id/facebookicon"
+                   android:layout_alignBottom="@+id/facebookicon"
+                   android:layout_marginLeft="-23dp"
+                   android:layout_marginTop="-18dp"/>
+
+
                 <ImageView
                     android:id="@+id/facebookicon2"
                     android:layout_width="90dp"

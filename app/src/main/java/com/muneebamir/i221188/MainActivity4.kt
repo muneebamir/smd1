@@ -25,6 +25,12 @@ class MainActivity4 : AppCompatActivity() {
             insets
         }
 
+        val btn = findViewById<ImageView>(R.id.facebookicon)
+        btn.setOnClickListener {
+            val intent = Intent(this, MainActivity16::class.java)
+            startActivity(intent)
+        }
+
         val sendButton = findViewById<ImageView>(R.id.send1)
 
         sendButton.setOnClickListener {
