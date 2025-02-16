@@ -157,6 +157,15 @@
             </RelativeLayout>
         </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:34"
+            android:textColor="@color/black"
+            android:layout_below="@+id/message1"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="-28dp"
+            android:textSize="10dp"/>
 
         <LinearLayout
             android:id="@+id/message2"
@@ -191,7 +200,19 @@
                     android:textSize="15dp"/>
 
             </RelativeLayout>
+
+
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:33"
+            android:textColor="@color/black"
+            android:layout_below="@+id/message2"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="-18dp"
+            android:textSize="10dp"/>
 
         <RelativeLayout
             android:id="@+id/m3"
@@ -215,6 +236,17 @@
 
         </RelativeLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:33"
+            android:textColor="@color/black"
+            android:layout_below="@+id/m3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="-12dp"
+            android:textSize="10dp"/>
+
 
         <RelativeLayout
             android:id="@+id/m4"
@@ -228,6 +260,7 @@
             android:layout_above="@+id/message2">
 
             <TextView
+                android:id="@+id/t1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="  Hello, How are you?  "
@@ -235,7 +268,24 @@
                 android:layout_centerInParent="true"
                 android:padding="10dp"
                 android:textSize="15dp"/>
+
+
+
         </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:32"
+            android:textColor="@color/black"
+            android:layout_below="@+id/m4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="-12dp"
+            android:textSize="10dp"/>
     </RelativeLayout>
+
+
+
 
 </RelativeLayout>
