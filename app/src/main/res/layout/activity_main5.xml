@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5"
+    android:background="#FDFDFD">
+
+    <RelativeLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/backwardarrow"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"/>
+        
+        <TextView
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OliviaD"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/write"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/stories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top1"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/dms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DMs"
+            android:textColor="#58432E"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Requests"
+            android:layout_marginEnd="30dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="#58432E"
+        android:layout_below="@id/stories"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="80dp"/>
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search for DMs"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/search1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_below="@+id/search">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/profilepic"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img3"
+            android:background="@drawable/oval_image"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alia James"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/profilepic"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/camera"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/profile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/profilepic2"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img4"
+                android:background="@drawable/oval_image"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/username2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Emily James"
+
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/profilepic2"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/arrow2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/camera"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/profile3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/profilepic3"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img1"
+                android:background="@drawable/oval_image"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/username3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lily Thomas"
+
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/profilepic3"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/arrow3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/camera"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/profile4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/profilepic4"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img5"
+                android:background="@drawable/oval_image"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/username4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Christopher"
+
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/profilepic4"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/arrow4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/camera"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/profile5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/profilepic5"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img6"
+                android:background="@drawable/oval_image"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/username5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amy Weslay"
+
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/profilepic5"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/arrow5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/camera"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/profile6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/profilepic6"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img2"
+                android:background="@drawable/oval_image"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/username6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laura Ryan"
+
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/profilepic6"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/arrow6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/camera"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+</ScrollView>
+
+</RelativeLayout>

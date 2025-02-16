@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="#FDFDFD">
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo1"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+       android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/welcome2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We are happy to see you. Please login to continue."
+        android:textSize="15sp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="60dp"
+        android:layout_below="@+id/imageView"/>
+
+    <EditText
+
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_below="@+id/welcome2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/forgotpw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="#58432E"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+
+    <RelativeLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotpw"
+        android:backgroundTint="#58432E"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#FDFDFD"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:padding="10dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/continuesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="─────────── or continue with ───────────"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/logos"
+        android:layout_below="@+id/continuesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/oval_image"
+            android:src="@drawable/gicon"
+            android:scaleType="fitCenter"
+            android:clipToOutline="true"
+
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/oval_image"
+            android:src="@drawable/appleicon"
+            android:scaleType="fitCenter"
+            android:clipToOutline="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/oval_image"
+            android:src="@drawable/facebookicon"
+            android:scaleType="fitCenter"
+            android:clipToOutline="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/logos"
+        >
+
+    <TextView
+
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textColor="@color/black"
+        android:layout_below="@+id/logos"
+        />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Register"
+        android:textStyle="bold"
+        android:textColor="#58432E"
+        android:layout_below="@+id/logos"
+        android:layout_toRightOf="@+id/signup"
+        />
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

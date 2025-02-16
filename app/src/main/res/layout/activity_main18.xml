@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity18"
+    android:background="#FDFDFD"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/backwardarrow"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OliviaD"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/write"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contacts"
+        android:textStyle="bold"
+        android:textColor="#58432E"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav">
+
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search for friends"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In Contacts"
+        android:textStyle="bold"
+        android:textColor="#58432E"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/profilepic"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img3"
+                android:background="@drawable/oval_image"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Henry Benjamin"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/profilepic"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/message"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/profile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            >
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/profilepic2"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img4"
+                android:background="@drawable/oval_image"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/username2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Emily James"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/profilepic2"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/arrow2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/message"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/profile3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            >
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/profilepic3"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img1"
+                android:background="@drawable/oval_image"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/username3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lily Thomas"
+
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/profilepic3"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/arrow3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/message"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invite New Friends"
+            android:textStyle="bold"
+            android:textColor="#58432E"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/profile5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                >
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/profilepic5"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/img6"
+                    android:background="@drawable/oval_image"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/username5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amy Weslay"
+
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/profilepic5"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"/>
+
+
+                <Button
+                    android:id="@+id/arrow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="10sp"
+                    android:text="Invite"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#58432E"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/profile6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/profilepic6"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/img2"
+                    android:background="@drawable/oval_image"
+                    android:layout_centerVertical="true"/>
+                    />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/username6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laura Ryan"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/profilepic6"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"/>
+                    />
+
+                <Button
+                    android:id="@+id/arrow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="10sp"
+                    android:text="Invite"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#58432E"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/profile7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/profilepic7"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/img7"
+                    android:background="@drawable/oval_image"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/username7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daniel Roberts"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/profilepic7"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"/>
+
+                <Button
+                    android:id="@+id/arrow7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="10sp"
+                    android:text="Invite"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#58432E"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
